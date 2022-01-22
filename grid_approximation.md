@@ -90,7 +90,7 @@ precis( globe.qa )
 ```
 
     ##        mean        sd      5.5%     94.5%
-    ## p 0.6666663 0.1571339 0.4155361 0.9177966
+    ## p 0.6666664 0.1571338 0.4155361 0.9177966
 
 Since we already know the posterior, let’s compare to see how good the
 approximation is.
@@ -154,3 +154,68 @@ like grid approximation, quadratic approximation, and Markov chain Monte
 Carlo. Each method imposes different trade-offs.
 
 **2.6. Practice**
+
+**2E1.** Which of the expressions below correspond to the statement:
+*the probability of rain on Monday*?  
+(1) Pr(rain)  
+**(2)** Pr(rain\|Monday)  
+(3) Pr(Monday\|rain)  
+**(4)** Pr(rain, Monday)/ Pr(Monday)
+
+**Answer:**
+
+**(2)** Pr(rain\|Monday) – by it’s definition (Probability of rain given
+it’s Monday)
+
+**and**
+
+Pr (rain, Monday) = Pr(rain\|Monday) \* Pr(Monday)
+
+This is like saying that the probability of rain **and** Monday is equal
+to the prob. of rain when it’s Monday, times the prob. that it’s Monday.
+
+Then, Pr(rain\|Monday) = Pr(rain, Monday) / Pr(Monday) **(4)**
+
+**2E2.** Which of the following statements corresponds to the
+expression: Pr(Monday\|rain)?  
+(1) The probability of rain on Monday.  
+(2) The probability of rain, given that it is Monday.  
+**(3)** The probability that it is Monday, given that it is raining.  
+(4) The probability that it is Monday and that it is raining.
+
+**Answer:**
+
+**(3)** The probability that it is Monday, given that it is raining.
+
+**2E3.** Which of the expressions below correspond to the statement:
+*the probability that it is Monday,  
+given that it is raining*?  
+**(1)** Pr(Monday\|rain)  
+(2) Pr(rain\|Monday)  
+(3) Pr(rain\|Monday) Pr(Monday)  
+**(4)** Pr(rain\|Monday) Pr(Monday)/ Pr(rain)  
+(5) Pr(Monday\|rain) Pr(rain)/ Pr(Monday)
+
+**Answer:**
+
+**(1)** Pr(Monday\|rain)
+
+Also,
+
+Pr(Monday, rain) = Pr(Monday\|rain) \* Pr(rain) or
+
+Pr(Monday, rain) = Pr(rain\|Monday) \* Pr(Monday)
+
+Then, Pr(Monday\|rain) \* Pr(rain) = Pr(rain\|Monday) \* Pr(Monday)
+
+Pr(Monday\|rain) = Pr(rain\|Monday) \* Pr(Monday) / Pr(rain) **(4)**
+
+**2E4.** The Bayesian statistician Bruno de Finetti (1906–1985) began
+his 1973 book on probability theory with the declaration: “PROBABILITY
+DOES NOT EXIST.” The capitals appeared in the original,  
+so I imagine de Finetti wanted us to shout this statement. What he meant
+is that probability is a device for describing uncertainty from the
+perspective of an observer with limited knowledge; it has no  
+objective reality. Discuss the globe tossing example from the chapter,
+in light of this statement. What  
+does it mean to say “the probability of water is 0.7”?
